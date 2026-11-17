@@ -1,0 +1,51 @@
+# --- Secrets and environment files ---
+# Real keys live in .env files on your own machine only. Never commit them.
+.env
+.env.*
+*.env
+# ...but DO commit the template, which has placeholder values only.
+!.env.example
+
+# Other common secret/credential files
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+service-account*.json
+.secrets/
+
+# --- Operating system clutter ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Editor / IDE settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Personal Claude Code settings (shared settings in .claude/settings.json are kept) ---
+.claude/settings.local.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# --- Node.js ---
+node_modules/
+npm-debug.log*
+
+# --- Logs, build output and temporary files ---
+*.log
+logs/
+dist/
+build/
+tmp/
+.cache/
